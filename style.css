@@ -596,7 +596,8 @@ footer .footer-grid{
   .mobile-menu{ inset:72px 0 0 0; }
 
   .hero-text{ padding:0 24px; }
-  .hero-coat, .scroll-hint{ left:24px; right:24px; }
+  .hero-coat{ right:24px; }
+  .scroll-hint{ left:24px; }
 
   section{ padding:96px 0; }
   .process-grid{ grid-template-columns:repeat(2, 1fr); gap:40px; }
@@ -619,8 +620,8 @@ footer .footer-grid{
   .nav-inner{ padding:0 20px; }
   .nav-logo{ font-size:17px; }
   .hero-text{ padding:0 20px; }
-  .hero-coat, .scroll-hint{ left:20px; right:20px; bottom:20px; }
-  .hero-coat{ font-size:11px; }
+  .hero-coat{ right:20px; bottom:20px; font-size:11px; }
+  .scroll-hint{ left:20px; bottom:20px; }
   section{ padding:72px 0; }
   .dt-row{ flex-wrap:wrap; }
   .dt-row input{ min-width:120px; }
