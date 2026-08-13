@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lumen Lash Studio — Bespoke Lash Artistry</title>
+<meta name="description" content="Independent lash studio offering classic, hybrid, volume and mega volume extensions, lash lifts, fills and removals. By appointment only.">
+
+<!-- ============================================================
+     PLACEHOLDER CONTENT NOTICE
+     Studio name, one-line positioning statement, service prices/
+     descriptions, policies, Instagram handle, phone/email and all
+     photography are placeholder data for layout purposes only.
+     Search style.css / script.js for "PLACEHOLDER" or "Add Photo"
+     to find every swap point.
+     ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- ============================= NAV ============================= -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo" aria-label="Lumen Lash Studio home">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M2 15c4-8 16-8 20 0" stroke="#2A2622" stroke-width="1.6" stroke-linecap="round"/><path d="M12 15V9" stroke="#C97C5D" stroke-width="1.6" stroke-linecap="round"/></svg>
+      Lumen Lash Studio
+    </a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#policies">Policies</a>
+      <a href="#booking">Booking</a>
+      <a href="#footer">Contact</a>
+    </div>
+    <a href="#booking" class="nav-cta">
+      Book Now
+      <span class="icon-dot">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+    <button class="nav-burger" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services">Services</a>
+  <a href="#policies">Policies</a>
+  <a href="#booking">Booking</a>
+  <a href="#footer">Contact</a>
+</div>
+
+<!-- ============================= HERO ============================= -->
+<header class="hero" id="top">
+  <h1>Lashes that look <em>effortless</em>,<br>never overdone.</h1>
+  <p class="hero-sub">Bespoke lash artistry for the quietly polished — precise, considered, and designed to disappear into your everyday.</p>
+
+  <div class="hero-particles" aria-hidden="true">
+    <svg class="particle particle-flick" viewBox="0 0 38 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 15C9 3 29 3 36 15" />
+    </svg>
+    <svg class="particle particle-heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 21C12 21 4 15.2 4 9.4C4 6.4 6.4 4 9.4 4C10.9 4 12 5 12 5C12 5 13.1 4 14.6 4C17.6 4 20 6.4 20 9.4C20 15.2 12 21 12 21Z"/>
+    </svg>
+    <svg class="particle particle-spark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5Z"/>
+    </svg>
+    <svg class="particle particle-spark particle-spark-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5Z"/>
+    </svg>
+  </div>
+
+  <div class="hero-cta-row">
+    <a href="#booking" class="btn-primary">
+      Book Now
+      <span class="icon-dot">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+    <a href="#services" class="btn-ghost">View Services</a>
+  </div>
+
+  <p class="hero-note">By appointment only, Los Angeles CA</p>
+
+  <div class="scroll-hint"><span>Scroll</span><span class="line"></span></div>
+</header>
+
+<!-- ============================= CATALOG ============================= -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Services, considered.</h2>
+      <p>Every set is custom-mapped to your natural lash line and eye shape. Pricing reflects a full studio experience — never rushed. <em class="italic">All prices are placeholder figures.</em></p>
+    </div>
+
+    <div class="catalog-grid" id="catalogGrid"></div>
+  </div>
+</section>
+
+<!-- ============================= POLICIES ============================= -->
+<section id="policies" class="policies">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Studio policies.</h2>
+      <p>A few quiet rules that keep the studio calm, on schedule, and safe for everyone.</p>
+    </div>
+    <div class="policy-list reveal" id="policyList"></div>
+  </div>
+</section>
+
+<!-- ============================= BOOKING ============================= -->
+<section id="booking" class="booking">
+  <div class="wrap">
+    <div class="booking-layout">
+
+      <div class="booking-copy reveal">
+        <div class="section-head">
+          <h2>Let's find<br>your time.</h2>
+          <p>Message the studio right here — no forms, no phone tag. It takes about a minute.</p>
+        </div>
+        <ul class="booking-points">
+          <li><span class="dot"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#8C9A7B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Instant confirmation, no waiting on a call back.</li>
+          <li><span class="dot"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#8C9A7B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>A text reminder lands 24 hours before your visit.</li>
+          <li><span class="dot"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#8C9A7B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Reply here anytime to reschedule.</li>
+        </ul>
+      </div>
+
+      <div class="reveal">
+        <div class="phone-frame">
+          <div class="phone-head">
+            <div class="phone-avatar">L</div>
+            <div class="phone-head-text">
+              <b>Lumen Lash Studio</b>
+              <span>Usually replies instantly</span>
+            </div>
+          </div>
+          <div class="chat-thread" id="chatThread" role="log" aria-live="polite" aria-label="Booking conversation"></div>
+          <div class="chat-input-area" id="chatInputArea"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FOOTER ============================= -->
+<footer id="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Lumen Lash Studio</h3>
+        <p>A quiet, one-chair studio dedicated to precise, natural-looking lash artistry. <em class="italic">Placeholder address:</em> By appointment only — Los Feliz, Los Angeles.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <a href="#services">Services</a>
+        <a href="#policies">Policies</a>
+        <a href="#booking">Book an Appointment</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="https://instagram.com" target="_blank" rel="noopener">@lumen.lash.studio</a>
+        <a href="mailto:hello@lumenlash.studio">hello@lumenlash.studio</a>
+        <p>(555) 019-2847 <em class="italic" style="opacity:.6;">— placeholder</em></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Lumen Lash Studio. All rights reserved.</span>
+      <span>Site content is placeholder — replace before launch.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
