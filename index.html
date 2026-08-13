@@ -30,7 +30,7 @@
   <div class="nav-inner">
     <a href="#top" class="nav-logo" aria-label="Lumen Lash Studio home">
       <svg viewBox="0 0 24 24" fill="none"><path d="M2 15c4-8 16-8 20 0" stroke="#2A2622" stroke-width="1.6" stroke-linecap="round"/><path d="M12 15V9" stroke="#C97C5D" stroke-width="1.6" stroke-linecap="round"/></svg>
-      Lumen Lash Studio
+      <span class="nav-logo-text">Lumen Lash Studio</span>
     </a>
     <div class="nav-links">
       <a href="#services">Services</a>
@@ -38,17 +38,17 @@
       <a href="#booking">Booking</a>
       <a href="#footer">Contact</a>
     </div>
-    <a href="#booking" class="nav-cta">
-      Book Now
+    <a href="#booking" class="nav-cta" aria-label="Book Now">
+      <span class="nav-cta-label">Book Now</span>
       <span class="icon-dot">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </span>
     </a>
-    <button class="nav-burger" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <button class="nav-burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
   <a href="#services">Services</a>
   <a href="#policies">Policies</a>
   <a href="#booking">Booking</a>
@@ -90,6 +90,7 @@
   <div class="scroll-hint"><span>Scroll</span><span class="line"></span></div>
 </header>
 
+<main>
 <!-- ============================= CATALOG ============================= -->
 <section id="services">
   <div class="wrap">
@@ -147,6 +148,7 @@
     </div>
   </div>
 </section>
+</main>
 
 <!-- ============================= FOOTER ============================= -->
 <footer id="footer">

@@ -60,15 +60,18 @@
   /* ===================== MOBILE MENU ===================== */
   var burger = document.getElementById("burgerBtn");
   var mobileMenu = document.getElementById("mobileMenu");
+  function setMobileMenu(open){
+    burger.classList.toggle("open", open);
+    mobileMenu.classList.toggle("open", open);
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+    mobileMenu.setAttribute("aria-hidden", open ? "false" : "true");
+    document.body.classList.toggle("menu-open", open);
+  }
   burger.addEventListener("click", function(){
-    burger.classList.toggle("open");
-    mobileMenu.classList.toggle("open");
+    setMobileMenu(!mobileMenu.classList.contains("open"));
   });
   mobileMenu.querySelectorAll("a").forEach(function(a){
-    a.addEventListener("click", function(){
-      burger.classList.remove("open");
-      mobileMenu.classList.remove("open");
-    });
+    a.addEventListener("click", function(){ setMobileMenu(false); });
   });
 
   /* ===================== CATALOG RENDER ===================== */
