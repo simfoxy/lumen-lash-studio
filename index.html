@@ -3,140 +3,142 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Lumen Lash Studio — Bespoke Lash Artistry</title>
-<meta name="description" content="Independent lash studio offering classic, hybrid, volume and mega volume extensions, lash lifts, fills and removals. By appointment only.">
+<title>Noir &amp; Lacquer — Nail Atelier</title>
+<meta name="description" content="An editorial nail atelier. Precision manicures, hand-painted detail, and hospital-grade sterilization, by appointment only.">
 
 <!-- ============================================================
      PLACEHOLDER CONTENT NOTICE
-     Studio name, one-line positioning statement, service prices/
-     descriptions, policies, Instagram handle, phone/email and all
-     photography are placeholder data for layout purposes only.
-     Search style.css / script.js for "PLACEHOLDER" or "Add Photo"
-     to find every swap point.
+     Studio name (Noir & Lacquer), process steps, catalog prices,
+     policies and contact details are placeholder copy for layout
+     purposes only. Hero frame sequence (./frames/) is AI-generated
+     placeholder photography — replace with real studio footage
+     before launch. Search for "PLACEHOLDER" to find every swap point.
      ============================================================ -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="grain"></div>
-
 <!-- ============================= NAV ============================= -->
-<nav class="nav">
+<nav class="nav" id="siteNav">
   <div class="nav-inner">
-    <a href="#top" class="nav-logo" aria-label="Lumen Lash Studio home">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M2 15c4-8 16-8 20 0" stroke="#2A2622" stroke-width="1.6" stroke-linecap="round"/><path d="M12 15V9" stroke="#C97C5D" stroke-width="1.6" stroke-linecap="round"/></svg>
-      <span class="nav-logo-text">Lumen Lash Studio</span>
-    </a>
+    <a href="#top" class="nav-logo" aria-label="Noir &amp; Lacquer home">Noir&nbsp;&amp;&nbsp;Lacquer</a>
     <div class="nav-links">
-      <a href="#services">Services</a>
+      <a href="#catalog">Catalog</a>
       <a href="#policies">Policies</a>
-      <a href="#booking">Booking</a>
       <a href="#footer">Contact</a>
     </div>
-    <a href="#booking" class="nav-cta" aria-label="Book Now">
-      <span class="nav-cta-label">Book Now</span>
-      <span class="icon-dot">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </span>
-    </a>
+    <a href="#booking" class="nav-cta">Book Now</a>
     <button class="nav-burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-  <a href="#services">Services</a>
+  <a href="#catalog">Catalog</a>
   <a href="#policies">Policies</a>
-  <a href="#booking">Booking</a>
+  <a href="#booking">Book Now</a>
   <a href="#footer">Contact</a>
 </div>
 
 <!-- ============================= HERO ============================= -->
-<header class="hero" id="top">
-  <h1>Lashes that look <em>effortless</em>,<br>never overdone.</h1>
-  <p class="hero-sub">Bespoke lash artistry for the quietly polished — precise, considered, and designed to disappear into your everyday.</p>
+<!-- Job: stop the visitor, prove precision through the pinned scroll polish reveal. -->
+<header class="hero-outer" id="top">
+  <div class="hero-sticky">
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero-vignette" aria-hidden="true"></div>
+    <div class="hero-sweep" aria-hidden="true"></div>
 
-  <div class="hero-particles" aria-hidden="true">
-    <svg class="particle particle-flick" viewBox="0 0 38 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M2 15C9 3 29 3 36 15" />
-    </svg>
-    <svg class="particle particle-heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 21C12 21 4 15.2 4 9.4C4 6.4 6.4 4 9.4 4C10.9 4 12 5 12 5C12 5 13.1 4 14.6 4C17.6 4 20 6.4 20 9.4C20 15.2 12 21 12 21Z"/>
-    </svg>
-    <svg class="particle particle-spark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5Z"/>
-    </svg>
-    <svg class="particle particle-spark particle-spark-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5Z"/>
-    </svg>
+    <div class="hero-text" id="heroText">
+      <p class="eyebrow eyebrow--light">Noir &amp; Lacquer</p>
+      <h1>Precision,<br><em>applied</em> by hand.</h1>
+    </div>
+
+    <div class="hero-coat" id="heroCoat" aria-hidden="true"><span class="hero-coat-num">COAT 01 / 06</span><span class="hero-coat-stage"> — Bare</span></div>
+    <div class="scroll-hint" aria-hidden="true"><span>Scroll</span><span class="line"></span></div>
   </div>
-
-  <div class="hero-cta-row">
-    <a href="#booking" class="btn-primary">
-      Book Now
-      <span class="icon-dot">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </span>
-    </a>
-    <a href="#services" class="btn-ghost">View Services</a>
-  </div>
-
-  <p class="hero-note">By appointment only, Los Angeles CA</p>
-
-  <div class="scroll-hint"><span>Scroll</span><span class="line"></span></div>
 </header>
 
 <main>
-<!-- ============================= CATALOG ============================= -->
-<section id="services">
+<!-- ============================= PROCESS ============================= -->
+<!-- Job: show what an appointment feels like — make the ritual feel considered. -->
+<section id="process" class="scheme-warm">
   <div class="wrap">
-    <div class="section-head reveal">
-      <h2>Services, considered.</h2>
-      <p>Every set is custom-mapped to your natural lash line and eye shape. Pricing reflects a full studio experience — never rushed. <em class="italic">All prices are placeholder figures.</em></p>
+    <p class="eyebrow reveal">The Process</p>
+    <h2 class="h2-large reveal">Every set follows the same ritual.</h2>
+
+    <div class="process-grid">
+      <div class="process-step reveal">
+        <span class="step-num">01</span>
+        <h3>Consult</h3>
+        <p>Reference photos, a nail health check, and honest talk about what will and won't last on your hands.</p>
+      </div>
+      <div class="process-step reveal">
+        <span class="step-num">02</span>
+        <h3>Prep &amp; Shape</h3>
+        <p>Cuticle work, shape, structure — the part clients never see but always feel a week later.</p>
+      </div>
+      <div class="process-step reveal">
+        <span class="step-num">03</span>
+        <h3>Color &amp; Art</h3>
+        <p>Base, color, hand-painted or applied detail, built layer by layer until it's exactly right.</p>
+      </div>
+      <div class="process-step reveal">
+        <span class="step-num">04</span>
+        <h3>Cure &amp; Finish</h3>
+        <p>Top coat, cure, and aftercare notes sent home with every client — so the set lasts as long as it should.</p>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- ============================= CATALOG ============================= -->
+<!-- Job: the one loud section. Full-saturation lacquer doing the persuading — sharp-edged, price-tagged, no shopping-cart clutter. -->
+<section id="catalog" class="scheme-light">
+  <div class="wrap">
+    <p class="eyebrow reveal">The Catalog</p>
+    <h2 class="h2-large reveal">Six ways to leave with new hands.</h2>
 
     <div class="catalog-grid" id="catalogGrid"></div>
   </div>
 </section>
 
 <!-- ============================= POLICIES ============================= -->
-<section id="policies" class="policies">
+<!-- Job: studio law, not fine print — stated once, plainly, dark and quiet. -->
+<section id="policies" class="scheme-dark">
   <div class="wrap">
-    <div class="section-head reveal">
-      <h2>Studio policies.</h2>
-      <p>A few quiet rules that keep the studio calm, on schedule, and safe for everyone.</p>
-    </div>
-    <div class="policy-list reveal" id="policyList"></div>
+    <p class="eyebrow eyebrow--light reveal">Policies</p>
+    <h2 class="h2-large reveal">A few quiet rules that keep the studio on schedule.</h2>
+
+    <div class="policy-list" id="policyList"></div>
   </div>
 </section>
 
 <!-- ============================= BOOKING ============================= -->
-<section id="booking" class="booking">
+<!-- Job: feel like texting the studio, not filling out a form. -->
+<section id="booking" class="scheme-light">
   <div class="wrap">
     <div class="booking-layout">
-
-      <div class="booking-copy reveal">
-        <div class="section-head">
-          <h2>Let's find<br>your time.</h2>
-          <p>Message the studio right here — no forms, no phone tag. It takes about a minute.</p>
-        </div>
-        <ul class="booking-points">
-          <li><span class="dot"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#8C9A7B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Instant confirmation, no waiting on a call back.</li>
-          <li><span class="dot"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#8C9A7B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>A text reminder lands 24 hours before your visit.</li>
-          <li><span class="dot"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="#8C9A7B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Reply here anytime to reschedule.</li>
+      <div class="booking-copy">
+        <p class="eyebrow reveal">Book Now</p>
+        <h2 class="h2-medium reveal">Let's find<br>your time.</h2>
+        <p class="reveal">Message the studio right here — no forms, no phone tag. It takes about a minute.</p>
+        <ul class="booking-points reveal">
+          <li><span class="dot">✓</span>Instant confirmation, no waiting on a call back.</li>
+          <li><span class="dot">✓</span>A text reminder lands 24 hours before your visit.</li>
+          <li><span class="dot">✓</span>Reply here anytime to reschedule.</li>
         </ul>
       </div>
 
-      <div class="reveal">
-        <div class="phone-frame">
-          <div class="phone-head">
-            <div class="phone-avatar">L</div>
-            <div class="phone-head-text">
-              <b>Lumen Lash Studio</b>
+      <div class="reveal chat-col">
+        <div class="chat-panel">
+          <div class="chat-head">
+            <div class="chat-avatar">N</div>
+            <div class="chat-head-text">
+              <b>Noir &amp; Lacquer</b>
               <span>Usually replies instantly</span>
             </div>
           </div>
@@ -144,42 +146,49 @@
           <div class="chat-input-area" id="chatInputArea"></div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 </main>
 
 <!-- ============================= FOOTER ============================= -->
-<footer id="footer">
+<footer id="footer" class="scheme-dark">
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <h3>Lumen Lash Studio</h3>
-        <p>A quiet, one-chair studio dedicated to precise, natural-looking lash artistry. <em class="italic">Placeholder address:</em> By appointment only — Los Feliz, Los Angeles.</p>
+        <h3>Noir &amp; Lacquer</h3>
+        <p>An editorial nail atelier dedicated to precise, hand-painted work. <em>Placeholder address:</em> By appointment only — studio location on request.</p>
       </div>
       <div class="footer-col">
         <h4>Studio</h4>
-        <a href="#services">Services</a>
+        <a href="#catalog">Catalog</a>
         <a href="#policies">Policies</a>
         <a href="#booking">Book an Appointment</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <a href="https://instagram.com" target="_blank" rel="noopener">@lumen.lash.studio</a>
-        <a href="mailto:hello@lumenlash.studio">hello@lumenlash.studio</a>
-        <p>(555) 019-2847 <em class="italic" style="opacity:.6;">— placeholder</em></p>
+        <a href="https://instagram.com" target="_blank" rel="noopener">@noirandlacquer</a>
+        <a href="mailto:hello@noirandlacquer.studio">hello@noirandlacquer.studio</a>
+        <p class="placeholder-note">(555) 019-2847 — placeholder</p>
       </div>
     </div>
+
+    <a href="https://instagram.com" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+
     <div class="footer-bottom">
-      <span>© 2026 Lumen Lash Studio. All rights reserved.</span>
-      <span>Site content is placeholder — replace before launch.</span>
+      <span>© 2026 Noir &amp; Lacquer. All rights reserved.</span>
+      <span>Built by OSE.builds</span>
     </div>
   </div>
 </footer>
 
 <div class="toast" id="toast"></div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
